@@ -1,5 +1,4 @@
 <?php namespace Acme\Controllers;
-use duncan3dc\Laravel\BladeInstance;
 
 class PageController extends BaseController
 {
@@ -15,4 +14,7 @@ class PageController extends BaseController
         echo $this->blade->render("home");
     }
 
+    public function getShowPage() {
+        echo "Foo";
+    }
 }

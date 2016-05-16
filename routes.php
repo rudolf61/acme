@@ -15,6 +15,8 @@ $router->map('POST', '/register', 'Acme\Controllers\RegisterController@postShowR
 
 $router->map('GET', '/login', 'Acme\Controllers\RegisterController@getShowLoginPage', 'login');
 
+$router->map('GET', '/about', 'Acme\Controllers\RegisterController@getShowPage', 'generic_page');
+
 /*
 $router->map( 'GET', '/register', function() {
     require __DIR__ . '/../views/register.html';

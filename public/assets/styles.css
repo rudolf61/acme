@@ -1,0 +1,18 @@
+.empty-well { background: transparent; }
+.bigger-icon { font-size: 48px; }
+.footer-background {
+    background-color: black;
+    color:  white;
+}
+.errorfield {
+    display: inline-block;
+    width: 120px;
+}
+
+.padding-left-8px {
+     padding-left: 8px;
+}
+
+.red {
+    color: red;
+}

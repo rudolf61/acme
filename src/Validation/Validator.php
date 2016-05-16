@@ -18,7 +18,7 @@ class  Validator
         foreach ($validation_data as $name => $values) {
             foreach ($values as $value) {
                 $exploded = explode(":", $value);
-                if (isset($_POST[$name])) {
+
                     switch ($exploded[0]) {
                         case 'min':
                             $min = $exploded[1];
@@ -40,11 +40,8 @@ class  Validator
 
                             break;
                         default:
-                            ;
+                            $errors[$name] = "Undefined";
                     }
-                } else {
-                    $errors[$name] = "$name not found";
-                }
             }
         }
 
